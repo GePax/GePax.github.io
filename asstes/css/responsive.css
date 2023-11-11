@@ -1,0 +1,428 @@
+/*****========== Responsive =============*****/
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 1140px !important;
+    }
+
+    .services_area {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .services_card {
+        margin: 0 0;
+    }
+
+    .services_area .services_card {
+        width: 75%;
+    }
+
+    .services_area .services_info {
+        width: 60%;
+    }
+
+    .card_area {
+        gap: 30px;
+    }
+
+    .cardBlg {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 960px !important;
+    }
+
+    .banner_content {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .follow_Area {
+        position: relative;
+        max-width: 330px;
+        gap: 25px;
+        margin: 35px 0px;
+        transform: rotate(0deg) !important;
+        bottom: 0;
+        left: 0;
+    }
+
+    .flw_icon a i {
+        transform: rotate(0deg);
+    }
+
+    .banner_content .Cnt_img {
+        width: auto;
+    }
+
+    .EImg01 {
+        right: 423px;
+        top: 343px;
+    }
+
+    .banner_content .Cnt_info {
+        width: 58%;
+        position: relative;
+        margin-top: 60px;
+    }
+
+    .Ecnt01 {
+        top: 50px;
+        left: 23rem;
+    }
+
+    .Ecnt02 {
+        left: 212px;
+    }
+
+    .about .banner_content {
+        flex-direction: row-reverse !important;
+    }
+
+    .subnews h2 {
+        font-size: 50px;
+    }
+
+    .Project .banner_content {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .listproj {
+        width: auto;
+    }
+
+    .cardBlg {
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 720px !important;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .banner_content .Cnt_info .btn_area .btn {
+        font-size: 16px;
+        padding: 12px 17px;
+        margin: 28px 0px 20px 0px;
+    }
+
+    .mobile_menu {
+        display: block;
+    }
+
+    .OC_btn {
+        display: block;
+    }
+
+    .btn_area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner_content .Cnt_img .banner_img {
+
+        width: 300px;
+        height: 300px;
+    }
+
+    .EImg01 {
+        right: 387px;
+        top: 361px;
+    }
+
+    .EImg02 {
+        right: 24px;
+        top: -105px;
+    }
+
+    .banner_content .Cnt_info {
+        width: 100%;
+        position: relative;
+        margin-top: 100px;
+    }
+
+    .headTitle,
+    .banner_content .Cnt_info .title_inner h2 {
+        font-size: 45px;
+    }
+
+    .AboutInfo h2,
+    .subnews h2,
+    footer h2,
+    .services_info h2,
+    .Project .banner_content .listproj h2,
+    .banner_content .Cnt_info .title_inner .title_animation p {
+        font-size: 40px;
+    }
+
+    .banner_content .Cnt_info .title_inner .title_animation {
+        width: 100%;
+        height: 70px;
+    }
+
+    .AboutInfo p,
+    .banner_content .Cnt_info .description p {
+        font-size: 16px;
+    }
+
+    .aboutimg,
+    .AboutCnt {
+        width: 100%;
+        margin: auto !important;
+    }
+
+    .newsletter__form {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Project .banner_content .listproj p {
+        font-size: 16px;
+    }
+
+
+    .services_area .services_card,
+    .services_area .services_info {
+        width: 100%;
+    }
+
+    .services_card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services_info p {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .cardBlg {
+        width: 70%;
+    }
+
+    .cardBlg h4 {
+        font-size: 25px;
+    }
+
+    .cardBlg p {
+        font-size: 16px;
+    }
+
+    .cardBlg .checkbox span {
+
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .cardBlg .checkbox span i {
+        margin-right: 10px;
+        font-size: 18px;
+    }
+
+    .services .banner_content .serimg02 {
+        position: absolute;
+        scale: 0.3;
+        bottom: -90px;
+        right: -34px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 540px !important;
+    }
+
+    .EImg01 {
+        right: 313px;
+        top: 319px;
+    }
+
+    .banner_content .Cnt_img .banner_img {
+        width: 250px;
+        height: 250px;
+    }
+
+    section {
+        position: relative;
+        padding: 261px 16px 49px 16px;
+    }
+
+    .banner_content .Cnt_img .banner_img img {
+        top: -25px;
+    }
+
+    .Ecnt01 img {
+        width: 38px;
+    }
+
+    .Ecnt01 {
+        top: 50px;
+        left: 20rem;
+    }
+
+    .Ecnt02 img {
+        width: 30px;
+    }
+
+    .subnews {
+        position: relative;
+        padding: 30px;
+    }
+
+    .about,
+    .subr,
+    .services,
+    .Project,
+    footer {
+        padding: 120px 20px;
+    }
+
+    .newsletter__form .btn {
+        padding: 12px 34px;
+        margin: 0px;
+    }
+
+    footer .fimg {
+        scale: 0.3;
+        top: -43px;
+    }
+
+    footer .fimg2 {
+        position: absolute;
+        scale: 0.4;
+        right: -19px;
+        bottom: -56px;
+    }
+
+    .footersocal a {
+        font-size: 20px;
+    }
+
+    .cardBlg {
+        width: 60%;
+    }
+
+    .cardBlg h4 {
+        font-size: 24px;
+    }
+
+    .cardBlg p {
+        font-size: 15px;
+    }
+
+    .cardBlg .checkbox span {
+
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .cardBlg .checkbox span i {
+        margin-right: 8px;
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    .banner_content .Cnt_img .banner_img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .banner_content .Cnt_img .banner_img img {
+        top: -22px;
+    }
+
+    .EImg01 {
+        right: 15rem;
+        top: 249px;
+    }
+
+    .EImg02 {
+        right: 2px;
+        top: -84px;
+    }
+
+    .banner_content .Cnt_info .title_inner h2 {
+        font-size: 27px;
+    }
+
+    .AboutInfo h2,
+    .subnews h2,
+    footer h2,
+    .services_info h2,
+    .Project .banner_content .listproj h2,
+    .banner_content .Cnt_info .title_inner .title_animation p {
+        font-size: 22px;
+    }
+
+    .banner_content .Cnt_info .title_inner .title_animation {
+        height: 40px;
+    }
+
+    .AboutInfo p,
+    footer p,
+    .banner_content .Cnt_info .description p {
+        font-size: 14px;
+    }
+
+    footer .banner_content .btn {
+        padding: 16px 35px;
+        font-size: 16px;
+        margin: 40px 0 0 0;
+    }
+
+    .AboutInfo button,
+    .btn_area .btn {
+        font-size: 15px;
+    }
+
+    .follow_Area span {
+        color: #fff;
+        position: relative;
+        padding-right: 57px;
+        font-size: 15px;
+    }
+
+    .follow_Area {
+        gap: 10px;
+        margin: 20px 0px;
+    }
+
+    .Ecnt01 {
+        top: 55px;
+        left: 13rem;
+    }
+
+    .flw_icon {
+        gap: 12px;
+    }
+
+    .year p,
+    .copyright .copyinfo a {
+        font-size: 14px;
+    }
+
+    .cardBlg {
+        width: 100%;
+    }
+}

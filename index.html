@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="asstes/css/css.css">
+    <link rel="stylesheet" href="asstes/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        #preloader {
+            position: fixed;
+            left: 0;
+            display: flex;
+            top: 0;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+            background: var(--bg01) no-repeat center center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .load {
+            width: 2.25em;
+            transform-origin: center;
+            animation: rotate4 2s linear infinite;
+        }
+
+        circle {
+            fill: none;
+            stroke: #741ff5;
+            stroke-width: 5;
+            stroke-dasharray: 1, 200;
+            stroke-dashoffset: 0;
+            stroke-linecap: round;
+            animation: dash4 1.5s ease-in-out infinite;
+        }
+
+        @keyframes rotate4 {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes dash4 {
+            0% {
+                stroke-dasharray: 1, 200;
+                stroke-dashoffset: 0;
+            }
+
+            50% {
+                stroke-dasharray: 90, 200;
+                stroke-dashoffset: -35px;
+            }
+
+            100% {
+                stroke-dashoffset: -125px;
+            }
+        }
+
+        .preloaderV {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 2s linear;
+        }
+
+        .preloaderH {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s 2s, opacity 2s linear;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader" class="visible">
+        <svg viewBox="25 25 50 50" class="load">
+            <circle r="20" cy="50" cx="50"></circle>
+        </svg>
+    </div>
+    <!--=============- header -==================-->
+    <header>
+        <div class="header">
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="#">
+                            <!--<img src="asstes/img/logo.png" alt="">-->
+                        </a>
+                    </div>
+                    <div class="navbar">
+                        <ul>
+                            <!--<li class="nav_item"><a href="#">Home</a></li>
+                            <li class="nav_item"><a href="#">About Us</a></li>
+                            <li class="nav_item"><a href="#">Youtube</a></li>
+                            <li class="nav_item"><a href="#">Project</a></li>
+                            <li class="nav_item"><a href="#">Login</a></li>-->
+                        </ul>
+                    </div>
+                    <div class="btn_area">
+                        <button class="btn">Join our discord!</button>
+                        <button class="OC_btn">
+                            <!--<i class="fi fi-rr-apps"></i>-->
+                        </button>
+                    </div>
+                </nav>
+                <!--======- header Mobile-========-->
+                <div class="mobile_menu">
+                    <nav class="mobile_nav">
+                        <button class="closebtn"><i class="fa-solid fa-xmark"></i></button>
+                        <div class="mblogo">
+                            <a href="#">
+                                <h2>Animation Coding</h2>
+                            </a>
+                        </div>
+                        <div class="mobile_bar">
+                            <ul>
+                                <li class="Mbnav_item"><a href="#">Home</a></li>
+                                <li class="Mbnav_item"><a href="#">About Us</a></li>
+                                <li class="Mbnav_item"><a href="#">Youtube</a></li>
+                                <li class="Mbnav_item"><a href="#">Project</a></li>
+                                <li class="Mbnav_item"><a href="#">Login</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="mobile_menu-backdrop"></div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="banner_content">
+                    <!--========== content============-->
+                    <div class="Cnt_info" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="title_inner">
+                            <h2>I'm a....</h2>
+                            <div class="title_animation">
+                                <p class="visible">Banner <span>Designer</span></p>
+                                <p>Livery <span>Designer</span></p>
+                                <p>Logo <span>Designer</span></p>
+                                <p>Uniform <span>Designer</span> </p>
+                                <p>Website <span>Designer</span> </p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>I’m product designer that focuses on making a product that will
+                                exceed your expectations so far.</p>
+                        </div>
+                        <a href="#" class="btn_area">
+                            <button class="btn">
+                                Join our discord! <i class="fa-regular fa-circle-play"></i>
+                            </button>
+                        </a>
+                        <div class="follow_Area">
+                            <span>Follow me</span>
+                            <div class="flw_icon">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <!--========== Element content============-->
+                        <span class="Ecnt01"><img src="asstes/img/bitcoin-01.png" alt="01"></span>
+                        <span class="Ecnt02"><img src="asstes/img/ethereum-01.png" alt="02"></span>
+
+                    </div>
+                    <!--========== img ============-->
+                    <div class="Cnt_img" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="box">
+                            <div class="banner_img">
+                                <img src="asstes/img/hero.png" alt="">
+                            </div>
+                        </div>
+                        <!---==========Element==========---->
+
+                        <span class="EImg01"><img src="asstes/img/sparkle-light.png" alt="01"></span>
+                        <span class="EImg02"><img src="asstes/img/x.png" alt="02"></span>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2 class="headTitle">About <span>me</span></h2>
+                <div class="banner_content">
+                    <div class="aboutimg" data-aos="fade-right" data-aos-duration="3000">
+                        <img src="asstes/img/features-01.png" alt="">
+                    </div>
+                    <div class="AboutCnt" data-aos="fade-left" data-aos-duration="3000">
+                        <div class="AboutInfo">
+                            <span class="subT">CREATE AND INVEST
+                            </span>
+                            <h2>CREATE YOUR <span>OWN NFT</span>
+                            </h2>
+                            <p>Multiple Chains, One Home. Stack up all your NFTs from across blockchains.
+                            </p>
+                            <button>see more <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="svg01" style="margin-bottom: 90px;">
+                <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 150 36">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke: url(#SVGID_1_);
+                            stroke-width: 8;
+                        }
+                    </style>
+                    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="2.5697" y1="17.8581" x2="146.8775"
+                        y2="17.8581">
+                        <stop offset="0" style="stop-color:var(--Main01)" />
+                        <stop offset="1" style="stop-color:var(--Main02)" />
+                    </linearGradient>
+                    <polyline class="st0" points="2.8,2.4 26.3,29.9 52.7,6.2 74.8,30.2 98.7,7 121.2,30.1 146.8,2.4 " />
+                </svg>
+
+            </div>
+
+            <div class="container">
+                <div class="banner_content">
+                    <div class="services_area">
+                        <img class="serimg" src="asstes/img/x.png" alt="">
+                        <div class="services_info" data-aos="fade-right" data-aos-duration="3000">
+                            <h2>LET'S START
+                                <span>MINTING!</span>
+                            </h2>
+
+                            <div class="svg01">
+                                <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 150 36">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: none;
+                                            stroke: url(#SVGID_1_);
+                                            stroke-width: 8;
+                                        }
+                                    </style>
+                                    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="2.5697"
+                                        y1="17.8581" x2="146.8775" y2="17.8581">
+                                        <stop offset="0" style="stop-color:var(--Main01)" />
+                                        <stop offset="1" style="stop-color:var(--Main02)" />
+                                    </linearGradient>
+                                    <polyline class="st0"
+                                        points="2.8,2.4 26.3,29.9 52.7,6.2 74.8,30.2 98.7,7 121.2,30.1 146.8,2.4 " />
+                                </svg>
+
+                            </div>
+                            <p>I design products that are more than pretty. I make them shippable and usable. Et tempor
+                                non mollit dolor et do aute voluptate ea ullamco.</p>
+                        </div>
+                        <div class="services_card" data-aos="fade-left" data-aos-duration="3000">
+                            <div class="card">
+                                <img src="asstes/img/web-design.png" alt="">
+                                <h3>Web design</h3>
+                                <p>Upload your NFTs and set a title, description and price. </p>
+                            </div>
+                            <div class="card">
+                                <img src="asstes/img/design.png" alt="">
+                                <h3>UI/Ux</h3>
+                                <p>Upload your NFTs and set a title, description and price. </p>
+                            </div>
+                            <div class="card">
+                                <img src="asstes/img/app-store.png" alt="">
+                                <h3>App Development</h3>
+                                <p>Upload your NFTs and set a title, description and price. </p>
+                            </div>
+                            <div class="card">
+                                <img src="asstes/img/3d-graphics.png" alt="">
+                                <h3>3D Design</h3>
+                                <p>Upload your NFTs and set a title, description and price. </p>
+                            </div>
+                        </div>
+                        <img class="serimg02" src="asstes/img/bitcoin-01.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blogs">
+
+            <h2 class="headTitle">SERVERS <span> I WORK FOR</span></h2>
+            <div class="svg01" style="margin-bottom: 90px;">
+                <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 150 36">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke: url(#SVGID_1_);
+                            stroke-width: 8;
+                        }
+                    </style>
+                    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="2.5697" y1="17.8581" x2="146.8775"
+                        y2="17.8581">
+                        <stop offset="0" style="stop-color:var(--Main01)" />
+                        <stop offset="1" style="stop-color:var(--Main02)" />
+                    </linearGradient>
+                    <polyline class="st0" points="2.8,2.4 26.3,29.9 52.7,6.2 74.8,30.2 98.7,7 121.2,30.1 146.8,2.4 " />
+                </svg>
+
+            </div>
+            <div class="container">
+                <div class="banner_content">
+                    <div class="card_area" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="cardBlg">
+                            <div class="discunt"><span>1</span></div>
+                            <span class="sub">Owner/Founder</span>
+                            <h4>GEPAX DESIGNS
+                            </h4>
+                            <p>This is the server that I founded in early 2023, and its one of the servers with most
+                                quality and best prices. Make sure to join.</p>
+                            <div class="checkbox">
+                                <span class="check"><i class="fa-solid fa-circle-check"></i>Good
+                                    Quality</span>
+                                <span class="check"><i class="fa-solid fa-circle-check"></i>1500+ Members</span>
+                                <span class="check"><i class="fa-solid fa-circle-check"></i>https://discord.gg/d8GDmmjUCn</span>
+                            </div>
+                        </div>
+                        <div class="cardBlg">
+                            <div class="discunt"><span>10%</span></div>
+                            <span class="sub">Internal Affairs Agent</span>
+                            <h4>KILLER DESIGNS
+                            </h4>
+                            <p>Quality comes first. we took our time to plan out everything and build our production
+                                pipeline for a good quality artworks.</p>
+                            <div class="checkbox">
+                                <span class="check">
+                                    <i class="fa-solid fa-circle-check"></i>Release website and
+                                    logo
+                                </span>
+                                <span class="check"><i class="fa-solid fa-circle-check"></i>Grow community</span>
+                                <span class="check"><i class="fa-solid fa-circle-check"></i>Launch the project</span>
+                            </div>
+                        </div>
+                        <div class="cardBlg">
+                            <div class="discunt"><span>20%</span></div>
+                            <span class="sub">Phase 03</span>
+                            <h4>LAUNCH
+                            </h4>
+                            <p>Quality comes first. we took our time to plan out everything and build our production
+                                pipeline for a good quality artworks.</p>
+                            <div class="checkbox">
+                                <span class="check"><i class="fa-solid fa-circle-check"></i>Release website and
+                                    logo</span>
+                                <span class="check"><i class="fa-solid fa-circle-check"></i>Grow community</span>
+                                <span class="check"><i class="fa-solid fa-circle-check"></i>Launch the project</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="Project">
+            <div class="svg01" style="margin-bottom: 90px;">
+
+                <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 150 36">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke: url(#SVGID_1_);
+                            stroke-width: 8;
+                        }
+                    </style>
+                    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="2.5697" y1="17.8581" x2="146.8775"
+                        y2="17.8581">
+                        <stop offset="0" style="stop-color:var(--Main01)" />
+                        <stop offset="1" style="stop-color:var(--Main02)" />
+                    </linearGradient>
+                    <polyline class="st0" points="2.8,2.4 26.3,29.9 52.7,6.2 74.8,30.2 98.7,7 121.2,30.1 146.8,2.4 " />
+                </svg>
+
+            </div>
+
+            <div class="container">
+                <div class="banner_content" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="listproj">
+                        <h2>1,500+</h2>
+                        <p>Members in our discord </p>
+                    </div>
+                    <div class="listproj">
+                        <h2>350+
+                        </h2>
+                        <p>
+                            Orders Completed </p>
+                    </div>
+                    <div class="listproj">
+                        <h2>1.5x</h2>
+                        <p>Years of experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="svg01" style="margin-top: 90px;">
+
+                <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 150 36">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke: url(#SVGID_1_);
+                            stroke-width: 8;
+                        }
+                    </style>
+                    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="2.5697" y1="17.8581" x2="146.8775"
+                        y2="17.8581">
+                        <stop offset="0" style="stop-color:var(--Main01)" />
+                        <stop offset="1" style="stop-color:var(--Main02)" />
+                    </linearGradient>
+                    <polyline class="st0" points="2.8,2.4 26.3,29.9 52.7,6.2 74.8,30.2 98.7,7 121.2,30.1 146.8,2.4 " />
+                </svg>
+
+            </div>
+        </section>
+
+        <section class="subr">
+            <div class="svg01">
+
+                <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 150 36">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke: url(#SVGID_1_);
+                            stroke-width: 8;
+                        }
+                    </style>
+                    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="2.5697" y1="17.8581" x2="146.8775"
+                        y2="17.8581">
+                        <stop offset="0" style="stop-color:var(--Main01)" />
+                        <stop offset="1" style="stop-color:var(--Main02)" />
+                    </linearGradient>
+                    <polyline class="st0" points="2.8,2.4 26.3,29.9 52.7,6.2 74.8,30.2 98.7,7 121.2,30.1 146.8,2.4 " />
+                </svg>
+
+            </div>
+            <div class="container">
+                <div class="banner_content">
+                    <div class="subnews" data-aos="fade-up" data-aos-duration="3000">
+                        <img class="simg1" src="asstes/img/circle-01.png" alt="">
+                        <h2>NEVER <span>MISS A DROP!</span> </h2>
+                        <p>Subscribe to our super-rare and exclusive drops & collectibles.
+
+                        </p>
+                        <div class="newsletter__form">
+                            <input type="email" name="EMAIL" placeholder="Enter your email" required="">
+                            <button class="btn">Submit</button>
+                        </div>
+                        <img class="simg2" src="asstes/img/bitcoin-01.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="svg01">
+
+                <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 150 36">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke: url(#SVGID_1_);
+                            stroke-width: 8;
+                        }
+                    </style>
+                    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="2.5697" y1="17.8581" x2="146.8775"
+                        y2="17.8581">
+                        <stop offset="0" style="stop-color:var(--Main01)" />
+                        <stop offset="1" style="stop-color:var(--Main02)" />
+                    </linearGradient>
+                    <polyline class="st0" points="2.8,2.4 26.3,29.9 52.7,6.2 74.8,30.2 98.7,7 121.2,30.1 146.8,2.4 " />
+                </svg>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="svg01">
+
+                <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 150 36">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke: url(#SVGID_1_);
+                            stroke-width: 8;
+                        }
+                    </style>
+                    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="2.5697" y1="17.8581" x2="146.8775"
+                        y2="17.8581">
+                        <stop offset="0" style="stop-color:var(--Main01)" />
+                        <stop offset="1" style="stop-color:var(--Main02)" />
+                    </linearGradient>
+                    <polyline class="st0" points="2.8,2.4 26.3,29.9 52.7,6.2 74.8,30.2 98.7,7 121.2,30.1 146.8,2.4 " />
+                </svg>
+
+            </div>
+            <div class="banner_content" data-aos="fade-up" data-aos-duration="3000">
+                <h2>We make it easy to
+                    <span>Discover</span>
+                </h2>
+                <p>Invest and manage all your youtubes at one place</p>
+                <a href="#" class="btn">
+                    Join community</a>
+
+                <img class="fimg" src="asstes/img/x.png">
+                <img class="fimg2" src="asstes/img/ethereum-01.png" alt="">
+
+
+                <div class="footersocal">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="copyright">
+                    <div class="year">
+                        <p>© 2023 AC. All rights reserved.</p>
+                    </div>
+                    <div class="copyinfo">
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Terms of use</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!----======= switcher ======----->
+    <div class="stBtn">
+        <button><i class="fa-solid fa-sliders"></i></button>
+    </div>
+    <div class="switcher">
+        <span id="color01"></span>
+        <span id="color02"></span>
+        <span id="color03"></span>
+        <span id="color04"></span>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="asstes/js/main.js"></script>
+    <script src="asstes/js/animation.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
